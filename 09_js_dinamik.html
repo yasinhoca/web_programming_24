@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dinamik</title>
+  <style>
+    body{
+      text-align: center;
+      font-size: 20px;
+    }
+    #frm{
+      margin:auto;
+      padding: 3px;
+      width: 300px;
+      height: 300px;
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+    }
+    #sp{
+      font-size: 20px;
+      text-align: center;
+      padding: 3px;
+    }
+    #btn{
+      font-size: 20px;
+      text-align: center;
+      padding: 3px;
+
+    }
+    #dil{
+      font-size: 20px;
+      text-align: center;
+      padding: 3px;
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+<h2> JS ile dinamik sayfa</h2>
+Kaç tane dil biliyorsunuz?<input type="number" min="0" max="10" id="sp">
+<br><br>
+<button onclick="olustur()" id="btn">GÖNDER</button><br><br>
+<div id="frm"></div>
+
+<script>
+  function olustur(){
+    var sayi, i, txt;
+    sayi = document.getElementById("sp").value;
+    txt = "";
+    for(i=1;i<=sayi;i++){
+      txt += i+". dil : <input id='dil'><br>"
+    }
+    document.getElementById("frm").innerHTML = txt;
+  }
+</script>
+
+</body>
+</html>
