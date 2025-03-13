@@ -19,7 +19,7 @@ if($conn->connect_error){
 }
 
 $sql = "INSERT INTO ogrenci (numara,ad,soyad,email) 
-VALUES (6,'Elif','Erzurum','e@e.com')";
+VALUES (7,'Filiz','Fidan','f@f.com')";
 
 if($conn->query($sql)===TRUE){
     echo "Veritabına kayıt başarılı!";

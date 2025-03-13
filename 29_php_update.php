@@ -35,7 +35,7 @@ if(isset($_POST["submit"])){
             echo "Ad <br> <input type='text' name='ad' value='$row[ad]'><br><br> ";
             echo "Soyad <br> <input type='text' name='soyad' value='$row[soyad]'><br><br> ";
             echo "Email <br> <input type='text' name='email' value='$row[email]'><br><br> ";
-            echo "<input type='submit' value='GÜNCELLE'>";
+            echo "<input type='submit' name='submit2' value='GÜNCELLE'>";
             echo "</form>";
         }
     } else {
